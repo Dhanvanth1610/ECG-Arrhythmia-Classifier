@@ -149,18 +149,4 @@ required). It shows 68 real ECG fragments across all 17 classes with:
 - per-class confidence bars
 - the full model-comparison table above
 
-## 6. Talking points for judges
-
-- 17-class problem with severe class imbalance (10–283 samples/class) — accuracy
-  alone is misleading, so balanced accuracy and macro-F1 are reported alongside it.
-- Every feature is clinically interpretable (RR-interval variability, QRS energy
-  bands, wavelet morphology) — `results/feature_importance.png` shows HRV and
-  wavelet-energy features dominate, matching cardiology domain knowledge.
-- Cross-validated, not a single lucky split — defensible under judge questioning.
-- 100% offline and reproducible: no API keys, no internet calls, no pretrained weights.
-
-## 7. Hackathon context
-
-Built for a hackathon at VIT Vellore. The team split up topics from a shared dataset
-folder (CT scans, chest X-rays, tabular heart-disease data, stroke prediction, ECG
-signals); this repo covers the **ECG signals / arrhythmia classification** part.
+** part.
